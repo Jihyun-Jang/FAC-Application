@@ -55,7 +55,7 @@ nav a {
 
 nav a:hover {
 	color: #2F3A42;
-	font-weight: bold;	
+	font-weight: bold;
 	transition: all 0.2s ease-in-out;		
 }
 
@@ -214,10 +214,33 @@ nav i {
 
 
 
-
-
 /*-----------*/
 
+
+#topBtn {
+	border: 1px solid transparent;
+	border-radius: 50%;
+	padding: 7px 12px;	
+	outline: none;
+	text-decoration: none;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #7E89B0;	
+	background-color: transparent;
+	position: fixed;
+	z-index: 30;
+	bottom: 40px;
+	right: 45px;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+#topBtn:hover {
+	opacity: 1;
+	color: white;
+	background-color: #7E89B0;
+	box-shadow: 1px 1px 3px gray;
+}
 
 
 /*FOOTER*/
