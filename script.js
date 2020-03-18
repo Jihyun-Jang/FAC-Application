@@ -80,3 +80,15 @@ window.addEventListener("keydown", function(key) {
 		prevSlide();
 	}
 });
+
+
+// TOP BUTTON
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", function() {
+	if(window.pageYOffset > 500) {
+		topBtn.style.display = "block";
+	} else {
+		topBtn.style.display = "none";
+	}
+});
