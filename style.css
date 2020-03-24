@@ -102,7 +102,7 @@ nav i {
 }
 
 .container h2 {
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 	font-size: 2rem;
 	text-shadow: 1px 1px 1px gray;
 	color: #2F3A42;
@@ -114,9 +114,10 @@ nav i {
 }
 
 .container p {
-	text-align: justify;
+	/*text-align: justify;*/
 	line-height: 1.8;
-	padding-left: 8%;	
+	padding-left: 12%;
+	padding-bottom: 20px;	
 }
 
 .aboutMe-content {
@@ -125,13 +126,14 @@ nav i {
 	align-items: flex-start;
 }
 
-.aboutMe-content p {
+.aboutMe-text {
 	width: 65%;
 }
 
 .aboutMe-content img {
 	width: 30%;
-	box-shadow: 3px 3px 10px gray;	
+	box-shadow: 3px 3px 10px gray;
+	border-radius: 1%;
 }
 
 #photoGallery, #whyFAC {
