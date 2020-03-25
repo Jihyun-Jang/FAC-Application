@@ -177,11 +177,11 @@ nav i {
 }
 
 #prevBtn {
-	left: 3%;
+	left: 4%;
 }
 
 #nextBtn {	
-	right: 1%;	
+	right: 2%;	
 }
 
 #prevBtn:hover, #nextBtn:hover {
@@ -195,13 +195,13 @@ nav i {
 	opacity: 0.4;	
 	border: none;	
 	background-color: transparent;	
-	font-size: 1.9rem;
+	font-size: 1.8rem;
 	cursor: pointer;
 	text-decoration: none;	
 	outline: none;
 	position: absolute;
-	top: 5%;
-	left: 3%;
+	top: 7%;
+	left: 4.5%;
 }
 
 #pauseBtn {
@@ -210,7 +210,7 @@ nav i {
 
 #playBtn:hover, #pauseBtn:hover {
 	opacity: 1;	
-	font-size: 2rem;
+	font-size: 1.9rem;
 	text-shadow: 1px 1px 3px black;
 }
 
