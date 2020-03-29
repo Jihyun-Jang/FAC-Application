@@ -77,7 +77,8 @@ nav i {
 .intro-content {
 	position: absolute;
 	top: 35%;
-	left: 52%;	
+	left: 52%;
+	cursor: pointer;
 }
 
 .intro-content h1 {

@@ -103,7 +103,7 @@ let index = 0;
 let currentText = "";
 let letter = "";
 
-(function typeWriter() {
+function typeWriter() {
 	currentText = texts[count];
 	letter = currentText.slice(0, ++index);
 	headings[count].textContent = letter;
@@ -114,5 +114,22 @@ let letter = "";
 	}
 
 	if(count > texts.length) return;
-	setTimeout(typeWriter, 150);
-})();
+	
+	setTimeout(typeWriter, 100);
+}
+
+typeWriter();
+
+const introContent = document.querySelector(".intro-content");
+introContent.addEventListener("click", function() {
+	count = 0;
+	index = 0;
+	currentText = "";
+	letter = "";
+
+	for(let i = 0; i < headings.length; i++) {
+		headings[i].textContent = "";
+	}
+
+	typeWriter();
+});
