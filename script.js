@@ -92,3 +92,27 @@ window.addEventListener("scroll", function() {
 		topBtn.style.display = "none";
 	}
 });
+
+
+
+// TYPEWRITER
+const texts = ["Jihyun Jang", "Founders and Coders Application", "Summer Cohort 2020"];
+const headings = document.querySelectorAll(".typing");
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function typeWriter() {
+	currentText = texts[count];
+	letter = currentText.slice(0, ++index);
+	headings[count].textContent = letter;
+
+	if(letter.length === currentText.length) {
+		count++;
+		index = 0;
+	}
+
+	if(count > texts.length) return;
+	setTimeout(typeWriter, 150);
+})();
