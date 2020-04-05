@@ -110,14 +110,14 @@ nav i {
 	text-transform: uppercase;
 }
 
-.container i {
+.headingIcon {
 	padding-right: 15px;
 }
 
 .container p {
 	/*text-align: justify;*/
 	line-height: 1.8;
-	padding-left: 12%;
+	/*padding-left: 12%;*/
 	padding-bottom: 20px;	
 }
 
