@@ -18,15 +18,15 @@ body {
 /*NAVBAR*/
 
 nav {
-	background-color: #7E89B0;/*#8F7EB0;*/ /*#8C71AC;*/ /*#A17FAC;*/
+	background-color: transparent;/*#7E89B0;*/
 	width: 100%;
 	position: fixed;
 	z-index: 20;
-	box-shadow: 0px 2px 10px gray;
+	/*box-shadow: 0px 2px 10px gray;*/
 }
 
 .nav-container {
-	width: 87%;
+	width: 93%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -68,28 +68,33 @@ nav i {
 
 .intro-container {
 	position: relative;
-}
-
-.intro-container img {	
-	width: 100%;
+	background: url(images/bg1.jpg) center no-repeat;
+	background-size: cover;
+	height: 100vh;
 }
 
 .intro-content {
 	position: absolute;
-	top: 35%;
-	left: 52%;
+	top: 30%;
+	left: 50%;
+	color: white;
 	cursor: pointer;
 }
 
+.intro-content:hover {
+	color: lightgray;
+}
+
 .intro-content h1 {
+	/*color: white;*/
 	font-size: 3.2rem;
-	text-shadow: 2px 1px 5px gray;	
+	text-shadow: 3px 2px 5px black;	
 }
 
 .intro-content h3 {
+	/*color: white;*/
 	font-size: 2rem;
-	text-shadow: 1px 1px 3px gray;
-	color: #2F3A42;
+	text-shadow: 3px 2px 3px black;	
 }
 
 

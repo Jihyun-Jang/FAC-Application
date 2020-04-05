@@ -113,7 +113,7 @@ function typeWriter() {
 		index = 0;
 	}
 
-	if(count > texts.length) return;
+	if(count >= texts.length) return;
 	
 	setTimeout(typeWriter, 100);
 }
