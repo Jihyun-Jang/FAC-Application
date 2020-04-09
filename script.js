@@ -82,6 +82,18 @@ window.addEventListener("keydown", function(key) {
 });
 
 
+// NavBar
+const navBar = document.querySelector("nav");
+
+window.addEventListener("scroll", function() {
+	if(window.pageYOffset > 200) {
+		navBar.classList.add("navBarStyle");
+	} else {
+		navBar.classList.remove("navBarStyle");
+	}
+});
+
+
 // TOP BUTTON
 const topBtn = document.getElementById("topBtn");
 
