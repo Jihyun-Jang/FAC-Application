@@ -18,11 +18,10 @@ body {
 /*NAVBAR*/
 
 nav {
-	background-color: transparent;/*#7E89B0;*/
+	background-color: transparent;
 	width: 100%;
 	position: fixed;
-	z-index: 20;
-	/*box-shadow: 0px 2px 10px gray;*/
+	z-index: 20;	
 }
 
 .nav-container {
@@ -59,7 +58,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-	color: gray;/*#001324;*//*#2F3A42;*/	
+	color: gray;	
 	transition: all 0.2s ease-in-out;
 	font-weight: bold;
 	text-shadow: 1px 1px 3px black;
@@ -91,6 +90,7 @@ nav i {
 	left: 50%;
 	color: white;
 	cursor: pointer;
+	font-family: sans-serif;
 }
 
 .intro-content:hover {
@@ -108,6 +108,7 @@ nav i {
 }
 
 
+
 /*SECTION*/
 
 .container {
@@ -122,7 +123,7 @@ nav i {
 	font-size: 2rem;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px gray;
-	color: #035472;/*#2F3A42;*/
+	color: #035472;
 	text-transform: uppercase;
 }
 
@@ -131,9 +132,8 @@ nav i {
 }
 
 .container p {
-	/*text-align: justify;*/
-	line-height: 1.8;
-	/*padding-left: 12%;*/
+	text-align: justify;
+	line-height: 1.8;	
 	padding-bottom: 20px;	
 }
 
@@ -155,7 +155,7 @@ nav i {
 
 #photoGallery, #whyFAC {
 	width: 100%;
-	background-color: #E9F6FE; /*#EFF8FD;*/ /*#F5F7FF;*/
+	background-color: #E9F6FE;
 }
 
 #whyCoding ul {
@@ -164,6 +164,7 @@ nav i {
 }
 
 #whyCoding ul li a {
+	font-size: 1.1rem;
 	text-decoration: none;
 	outline: none;
 	color: black;
@@ -171,20 +172,90 @@ nav i {
 
 #whyCoding ul li a:hover {	
 	color: #035472;
-	font-weight: bold;
-	
+	font-weight: bold;	
 }
+
+.text-container {
+	column-count: 2;
+	column-gap: 40px;
+}
+
+.box1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.square {
+	width: 60px;
+	height: 60px;
+	background-color: #017C9E;
+	border-radius: 0%;
+	animation-name: toCircle;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+.triangle {
+	width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid #017C9E;
+}
+
+.circle {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #017C9E;
+	animation-name: toSquare;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes toCircle {
+	from {
+		border-radius: 0%;
+	}
+
+	to {
+		border-radius: 50%;
+	}
+}
+
+@keyframes toSquare {
+	from {
+		border-radius: 50%;
+	}
+
+	to {
+		border-radius: 0%;
+	}
+}
+
+#contact ul {
+	margin-left: 60px;
+	line-height: 2;
+	list-style: none;
+}
+
 
 
 
 /*IMAGE CAROUSEL*/
 
 .carousel-container {
-	width: 60%;
-	margin: 25px auto;
+	width: 600px;/*60%;*/
+	margin: 25px auto 0px;
 	overflow: hidden;
 	position: relative;
-	box-shadow: 3px 3px 7px gray;
+	/*box-shadow: 3px 3px 7px gray;*/
 }
 
 .carousel-container img {
@@ -247,9 +318,20 @@ nav i {
 	text-shadow: 1px 1px 3px black;
 }
 
+.galleryBox1 {
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	background-color: #3E4243;
+}
 
-
-/*-----------*/
+.galleryBox2 {
+	width: 700px;
+	height: 20px;
+	margin: 0 auto;
+	background-color: #3E4243;
+	border-radius: 25%;
+}
 
 
 #topBtn {
@@ -260,7 +342,7 @@ nav i {
 	text-decoration: none;
 	font-size: 1.3rem;
 	font-weight: bold;
-	color: #035472; /*#1283A3;*//*#7E89B0;*/	
+	color: #017C9E;	
 	background-color: transparent;
 	position: fixed;
 	z-index: 30;
@@ -274,17 +356,17 @@ nav i {
 #topBtn:hover {
 	opacity: 1;
 	color: white;
-	background-color: #035472;
+	background-color: #017C9E;
 	box-shadow: 1px 1px 3px gray;
 }
 
 
 
 /*FOOTER*/
+
 footer {
 	width: 92%;
-	margin: 0 auto;
-	/*background-color:*//*#023E5A;*/ /*#7E89B0;*/
+	margin: 0 auto;	
 	text-align: center;
 }
 
@@ -296,30 +378,3 @@ footer p {
 hr {
 	border-top: 0.5px solid lightgray;
 }
-
-/*------------------*/
-
-
-
-
-
-span {
-	color: #6173B2; /*#7E89B0;*/ /*#6C36EA;*/ /*#6A1BDD;*/
-	font-weight: bold;
-	font-size: 19px;
-	/*text-shadow: 1px 1px 0px gray;*/
-}
-
-
-
-/*transform: translate(-50%, -50%);*/
-
-
-/*#aboutMe-title::before, #whyCoding-title::before, #photoGallery-title::before, 
-#whyFac-title::before, #contact-title::before {
-	content: '';
-    display: block;
-    height: 80px;
-    margin-top: -80px;
-    visibility: hidden;	  
-}*/
