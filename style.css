@@ -252,10 +252,10 @@ nav i {
 
 .carousel-container {
 	width: 600px;/*60%;*/
-	margin: 25px auto 0px;
+	margin: 30px auto 15px;
 	overflow: hidden;
 	position: relative;
-	/*box-shadow: 3px 3px 7px gray;*/
+	box-shadow: 10px 10px 7px gray;
 }
 
 .carousel-container img {
@@ -316,21 +316,6 @@ nav i {
 	opacity: 1;	
 	font-size: 1.9rem;
 	text-shadow: 1px 1px 3px black;
-}
-
-.galleryBox1 {
-	width: 20px;
-	height: 20px;
-	margin: 0 auto;
-	background-color: #3E4243;
-}
-
-.galleryBox2 {
-	width: 700px;
-	height: 20px;
-	margin: 0 auto;
-	background-color: #3E4243;
-	border-radius: 25%;
 }
 
 
