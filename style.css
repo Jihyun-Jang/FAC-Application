@@ -99,11 +99,13 @@ nav i {
 
 .intro-content h1 {	
 	font-size: 3.2rem;
+	padding-right: 30px;
 	text-shadow: 3px 2px 5px black;	
 }
 
 .intro-content h3 {	
 	font-size: 2rem;
+	padding-right: 30px;
 	text-shadow: 3px 2px 3px black;	
 }
 
@@ -362,4 +364,113 @@ footer p {
 
 hr {
 	border-top: 0.5px solid lightgray;
+}
+
+
+
+
+/*MEDIAQUERI*/
+
+@media screen and (max-width: 768px) {
+
+	nav h2 {	
+		font-size: 1.2rem;
+	}
+
+	nav li {
+		font-size: 0.9rem;
+		padding: 5px 0px 5px 17px;
+	}
+
+	.intro-container {		
+		height: 60vh;
+	}
+
+	.intro-content {		
+		top: 27%;
+		left: 17%;		
+	}	
+
+	.intro-content h1 {	
+		font-size: 2.7rem;		
+	}
+
+	.intro-content h3 {	
+		font-size: 2.0rem;		
+	}
+
+	.text-container {
+		column-count: 1;		
+	}
+
+	.carousel-container {
+		width: 500px;
+		margin: 10px auto;		
+	}
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+	nav h2 {	
+		font-size: 0.8rem;
+	}
+
+	nav li {
+		font-size: 0.6rem;
+		padding: 5px 0px 5px 12px;
+	}
+
+	.intro-container {		
+		height: 50vh;
+	}
+
+	.intro-content {		
+		top: 27%;
+		left: 17%;		
+	}	
+
+	.intro-content h1 {	
+		font-size: 1.9rem;		
+	}
+
+	.intro-content h3 {	
+		font-size: 1.3rem;		
+	}
+
+	.container h2 {
+		font-size: 1.5rem;
+	}
+
+	.text-container {
+		column-count: 1;		
+	}
+
+	.aboutMe-content {
+		flex-wrap: wrap;
+		justify-content: flex-start;		
+	}
+
+	.aboutMe-text {
+		width: 100%;
+	}
+
+	.aboutMe-content img {
+		width: 65%;			
+	}
+
+	.carousel-container {
+		width: 300px;
+		margin: 10px auto;		
+	}
+
+	#prevBtn, #nextBtn {		
+		font-size: 1.2rem;		
+	}
+
+	#playBtn, #pauseBtn {		
+		font-size: 1.2rem;		
+	}
+
 }
