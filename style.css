@@ -257,6 +257,7 @@ nav i {
 	margin: 30px auto 15px;
 	overflow: hidden;
 	position: relative;
+	border: 14px solid #035472;
 	box-shadow: 10px 10px 7px gray;
 }
 
@@ -283,11 +284,11 @@ nav i {
 }
 
 #prevBtn {
-	left: 5%;
+	left: 3%;
 }
 
 #nextBtn {	
-	right: 5%;	
+	right: 3%;	
 }
 
 #prevBtn:hover, #nextBtn:hover {
@@ -306,8 +307,8 @@ nav i {
 	text-decoration: none;	
 	outline: none;
 	position: absolute;
-	top: 8%;
-	left: 5%;
+	top: 6%;
+	left: 4%;
 }
 
 #pauseBtn {
