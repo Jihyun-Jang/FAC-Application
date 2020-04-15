@@ -253,11 +253,11 @@ nav i {
 /*IMAGE CAROUSEL*/
 
 .carousel-container {
-	width: 600px;/*60%;*/
+	width: 58%;
 	margin: 30px auto 15px;
 	overflow: hidden;
 	position: relative;
-	border: 14px solid #035472;
+	border: 16px solid #035472;
 	box-shadow: 10px 10px 7px gray;
 }
 
@@ -405,7 +405,7 @@ hr {
 	}
 
 	.carousel-container {
-		width: 500px;
+		width: 82%;
 		margin: 10px auto;		
 	}
 
@@ -419,12 +419,12 @@ hr {
 	}
 
 	nav li {
-		font-size: 0.6rem;
+		font-size: 0.7rem;
 		padding: 5px 0px 5px 12px;
 	}
 
 	.intro-container {		
-		height: 50vh;
+		height: 60vh;
 	}
 
 	.intro-content {		
@@ -458,20 +458,35 @@ hr {
 	}
 
 	.aboutMe-content img {
-		width: 65%;			
+		width: 80%;
+		margin: 5px 10%;		
 	}
 
 	.carousel-container {
 		width: 300px;
-		margin: 10px auto;		
+		margin: 10px auto;
+		border: 10px solid #035472;	
 	}
 
 	#prevBtn, #nextBtn {		
 		font-size: 1.2rem;		
 	}
 
+	#prevBtn:hover, #nextBtn:hover {		
+		font-size: 1.3rem;		
+	}
+
 	#playBtn, #pauseBtn {		
 		font-size: 1.2rem;		
+	}
+
+	#playBtn:hover, #pauseBtn:hover {		
+		font-size: 1.3rem;		
+	}
+
+	#topBtn {
+		bottom: 20px;
+		right: 25px;
 	}
 
 }
