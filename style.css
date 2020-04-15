@@ -253,7 +253,7 @@ nav i {
 /*IMAGE CAROUSEL*/
 
 .carousel-container {
-	width: 58%;
+	max-width: 680px;
 	margin: 30px auto 15px;
 	overflow: hidden;
 	position: relative;
@@ -404,8 +404,7 @@ hr {
 		column-count: 1;		
 	}
 
-	.carousel-container {
-		width: 82%;
+	.carousel-container {		
 		margin: 10px auto;		
 	}
 
@@ -462,8 +461,7 @@ hr {
 		margin: 5px 10%;		
 	}
 
-	.carousel-container {
-		width: 300px;
+	.carousel-container {		
 		margin: 10px auto;
 		border: 10px solid #035472;	
 	}
