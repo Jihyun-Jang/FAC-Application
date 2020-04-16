@@ -254,6 +254,7 @@ nav i {
 
 .carousel-container {
 	max-width: 680px;
+	height: auto;
 	margin: 30px auto 15px;
 	overflow: hidden;
 	position: relative;
@@ -262,12 +263,15 @@ nav i {
 }
 
 .carousel-container img {
-	width: 100%;		
+	width: 100%;
+	height: auto;		
 }
 
 .carousel-slide {
 	display: flex;
-	width: 100%;		
+	align-items: flex-start;
+	width: 100%;
+	height: auto;		
 }
 
 #prevBtn, #nextBtn {
@@ -383,10 +387,6 @@ hr {
 		padding: 5px 0px 5px 17px;
 	}
 
-	.intro-container {		
-		height: 60vh;
-	}
-
 	.intro-content {		
 		top: 27%;
 		left: 17%;		
@@ -420,10 +420,6 @@ hr {
 	nav li {
 		font-size: 0.7rem;
 		padding: 5px 0px 5px 12px;
-	}
-
-	.intro-container {		
-		height: 60vh;
 	}
 
 	.intro-content {		
