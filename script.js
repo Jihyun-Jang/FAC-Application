@@ -8,11 +8,9 @@ const playBtn = document.querySelector("#playBtn");
 const pauseBtn = document.querySelector("#pauseBtn");
 
 
-
 // next and prev buttons
 let counter = 1;
 const size = carouselImages[0].clientWidth;
-
 
 function sliding() {
 	carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
@@ -82,7 +80,7 @@ window.addEventListener("keydown", function(key) {
 });
 
 
-// NavBar
+// NAVBAR
 const navBar = document.querySelector("nav");
 
 window.addEventListener("scroll", function() {
@@ -104,7 +102,6 @@ window.addEventListener("scroll", function() {
 		topBtn.style.display = "none";
 	}
 });
-
 
 
 // TYPEWRITER
