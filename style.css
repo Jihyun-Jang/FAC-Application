@@ -151,12 +151,14 @@ nav i {
 .aboutMe-content img {
 	width: 25%;
 	box-shadow: 3px 3px 10px gray;	
-	border-radius: 3%;	
+	border-radius: 3%;
+	margin-top: 7px;
 }
 
-#photoGallery, #whyFAC {
+#photoGallery {
 	width: 100%;
-	background-color: #E9F6FE;
+	background: url("images/bg2.jpg") center no-repeat;
+	background-size: cover;	
 }
 
 #whyCoding ul {
@@ -176,6 +178,12 @@ nav i {
 	font-weight: bold;	
 }
 
+#whyFAC {
+	width: 100%;	
+	background: url("images/bg3.jpg") center no-repeat;
+	background-size: cover;	
+}
+
 .text-container {
 	column-count: 2;
 	column-gap: 40px;
@@ -184,13 +192,14 @@ nav i {
 .box1 {
 	display: flex;
 	align-items: center;
-	justify-content: center;	
+	justify-content: center;
+	margin: 5px 0px;	
 }
 
 .square {
 	width: 60px;
 	height: 60px;
-	background-color: #017C9E;
+	background-color: gray;
 	border-radius: 0%;
 	animation-name: toCircle;
 	animation-duration: 3s;
@@ -204,14 +213,14 @@ nav i {
     height: 0;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    border-bottom: 60px solid #017C9E;
+    border-bottom: 60px solid gray;
 }
 
 .circle {
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	background-color: #017C9E;
+	background-color: gray;
 	animation-name: toSquare;
 	animation-duration: 3s;
 	animation-timing-function: ease-in-out;
@@ -275,7 +284,7 @@ nav i {
 /*IMAGE CAROUSEL*/
 
 .carousel-container {
-	max-width: 680px;
+	max-width: 600px;
 	height: auto;
 	margin: 30px auto 15px;
 	overflow: hidden;
