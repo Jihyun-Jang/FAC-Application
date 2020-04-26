@@ -79,7 +79,7 @@ nav i {
 
 .intro-container {
 	position: relative;
-	background: url(images/bg1.jpg) center no-repeat;
+	background: url("images/bg1.jpg") center no-repeat;
 	background-size: cover;
 	height: 100vh;
 }
