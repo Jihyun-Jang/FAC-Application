@@ -10,7 +10,7 @@ const pauseBtn = document.querySelector("#pauseBtn");
 
 // next and prev buttons
 let counter = 1;
-const size = carouselImages[0].clientWidth;
+let size = carouselImages[0].clientWidth;
 
 function sliding() {
 	carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
@@ -77,6 +77,14 @@ window.addEventListener("keydown", function(key) {
 	if(key.keyCode === 37) {
 		prevSlide();
 	}
+});
+
+
+// when the window is resized
+window.addEventListener("resize", function() {
+	carouselSlide.style.transition = "none";	
+	size = carouselImages[0].clientWidth;
+	carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
 });
 
 
