@@ -44,7 +44,6 @@ carouselSlide.addEventListener("transitionend", function() {
 	}
 });
 
-sliding();
 nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
 
@@ -77,6 +76,14 @@ window.addEventListener("keydown", function(key) {
 	if(key.keyCode === 37) {
 		prevSlide();
 	}
+});
+
+
+// when the whole page has loaded
+window.addEventListener("load", function(event) {
+	carouselSlide.style.transition = "none";	
+	size = carouselImages[0].clientWidth;
+	carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
 });
 
 
